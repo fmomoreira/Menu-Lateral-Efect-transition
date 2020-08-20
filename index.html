@@ -1,26 +1,27 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu responsivo</title>
-    <link rel="stylesheet" href="style.css">
-
-    <body>
-        <div class="menuclosed" onmouseover="menuAll()" onmouseout="menuteste()">
+   <div class="menuclosed">
+            <div class="botaomenu" onclick="menuAll()">
+                x
+            </div>
         </div>
+
+
         <script>
             function menuteste() {
+
                 var menu = document.querySelector('.menu');
+                var pegabotao = document.querySelector('.botaomenu')
                 menu.setAttribute('class', 'menuclosed');
+                pegabotao.setAttribute('onclick', 'menuAll()')
+
+
+
+
             }
 
             function menuAll() {
                 var openmenu = document.querySelector('.menuclosed');
+                var pegabotao = document.querySelector('.botaomenu')
                 openmenu.setAttribute('class', 'menu');
+                pegabotao.setAttribute('onclick', 'menuteste()')
             }
         </script>
-    </body>
-
-</html>
