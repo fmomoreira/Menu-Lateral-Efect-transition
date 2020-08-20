@@ -1,0 +1,38 @@
+html,
+body,
+.menu,
+.menuclosed {
+    height: 100%;
+    width: 100%;
+}
+
+.menu {
+    width: 15rem;
+    height: 100%;
+    background-color: #4b545c;
+    transition: 1s;
+    z-index: 99;
+}
+
+.menuclosed {
+    transition: 1s;
+    width: 5rem;
+    height: 100%;
+    background-color: #4b545c;
+    z-index: 99;
+}
+
+.botaomenu {
+    color: black;
+    font-size: 40px;
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.texto {
+    position: absolute;
+    top: 10px;
+    z-index: -1;
+}
